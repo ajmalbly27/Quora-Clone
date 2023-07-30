@@ -1,9 +1,7 @@
 
 .add-answer-container {
     display: flex;
-    /* justify-content: center; */
-    margin: 0 50px;
-    margin-top: 90px;
+    margin: 25px 50px;
 }
 
 .select-question {
@@ -46,7 +44,6 @@
 .add-answer-buttons {
     float: right;
     margin-right: 50px;
-    margin-top: 15px;
 }
 
 .add-answer-cancel-button {

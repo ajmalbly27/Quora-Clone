@@ -8,6 +8,7 @@
 .login-container {
     width: 70vw;
     background-color: white;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,7 +28,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 25px 0;
+    margin-top: 25px;
 }
 
 .login-buttons {
@@ -65,4 +66,25 @@ label {
     color: blue;
     text-decoration: underline;
     cursor: pointer;
+}
+
+@media(max-width: 768px) {
+    .login-container {
+        padding: 15px;
+        text-align: center;
+    }
+    .login-logo-image {
+        width: 130px;
+    }
+    .login-container h5 {
+        font-size: 18px;
+    }
+    .login-username label,
+    .login-password label {
+        display: none;
+    }
+    .input-field-login {
+        width: 60vw;
+        margin: 10px 0;
+    }
 }
