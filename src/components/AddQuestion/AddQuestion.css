@@ -1,0 +1,52 @@
+.add-question-logo-image {
+    width: 150px;
+    margin-left: 75px;
+    background-color: white;
+}
+
+.add-question-logo-image-wrapper {
+    width: 100vw;
+    background-color: white;
+}
+
+.add-question-heading {
+    color: grey;
+    padding: 3px 7px;
+}
+
+.add-question-input-field {
+    width: 80vw;
+    font-size: 19px;
+    padding-left: 15px;
+    border: none;
+    outline: none;
+}
+
+.add-question-input-wrapper {
+    display: flex;
+    margin: 0 101px;
+    margin-top: 50px;
+    background-color: white;
+}
+
+::placeholder {
+    color: black;
+}
+
+.add-question-flag {
+    font-size: large;
+    color: red;
+    display: flex;
+    justify-content: flex-start;
+    margin: 15px 101px;
+}
+
+.add-question-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 101px;
+}
+
+.add-question-cancel-button {
+    margin: 0 15px;
+}

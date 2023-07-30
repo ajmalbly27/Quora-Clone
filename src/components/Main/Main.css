@@ -1,0 +1,14 @@
+
+.main-inner-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 45px;
+    background-color: rgb(226, 224, 224);
+}
+
+@media(max-width: 468px) {
+    .main-inner-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }  
+}

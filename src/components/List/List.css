@@ -1,0 +1,38 @@
+.list-wrapper {
+    width: 47vw;
+}
+
+.list-item {
+    padding: 10px 25px;
+    background-color: white;
+    margin-bottom: 25px;
+}
+
+.profile-icon-img {
+    width: 100%;
+    height: auto;
+}
+
+.profile-icon {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.list-icon-container {
+    display: flex;
+}
+
+.list-question-div {
+    font-size: 24px;
+    font-weight: 660;
+}
+
+.list-answer-div {
+    font-size: 20px;
+}
+
+@media(max-width: 468px) {
+    .list-wrapper {
+        width: 90vw;
+    }
+}

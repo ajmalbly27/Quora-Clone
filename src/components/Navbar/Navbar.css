@@ -1,0 +1,108 @@
+.image-logo {
+    width: 121px;
+}
+
+.quora-img {
+    width: 100%;
+    height: auto;
+}
+
+.input-field {
+    width: 31vw;
+    padding: 3px 21px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 19px;
+    font-weight: 400;
+    background-color: rgb(226, 224, 224);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; 
+}
+
+.navbar-left {
+    width: 60vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar-right {
+    width: 36vw;
+    display: flex;
+}
+
+.navbar-right-inner {
+    display: flex;
+}
+
+.btn-navbar {
+    margin: 0 10px;
+}
+
+.input-field::placeholder {
+    color: rgb(99, 98, 98);
+    font-size: 18px;
+}
+
+.navbar-right.show {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0; /* Adjust the distance from the top as needed */
+    right: 0;
+    width: 40%;
+    height: 100vh;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.hamburger-icon {
+    display: none; /* Hide the hamburger icon by default for larger screens */
+}
+
+.mobile-view-div {
+    display: flex;
+}
+
+@media(max-width: 768px) {
+    .navbar-right {
+        display: none; /* Hide the full menu for smaller screens */
+    }
+    .hamburger-icon {
+        display: block; /* Show the hamburger icon for smaller screens */
+        margin-right: 30px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    .navbar-right-inner {
+        flex-direction: column;
+    }
+    .btn-navbar {
+        margin-bottom: 10px;
+    }
+    .navbar-left {
+        width: 80vw;
+    }
+    .input-field {
+        width: 50vw;
+    }
+    .questionlist-wrapper {
+        padding-right: 15px;
+    }
+    .questionlist-wrapper h1 {
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 468px) {
+    .navbar-right.show {
+        width: 80%;
+    }
+}
