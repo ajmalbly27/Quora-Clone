@@ -35,4 +35,11 @@
     .list-wrapper {
         width: 90vw;
     }
+    .list-question-div {
+        font-size: 20px;
+        font-weight: 660;
+    }    
+    .list-answer-div {
+        font-size: 18px;
+    }
 }

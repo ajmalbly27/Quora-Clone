@@ -74,7 +74,7 @@ const Navbar = () => {
             </div>
 
             <div className={`navbar-right ${showMenu ? "show" : ""}`}>
-                <div className="hamburger-icon" onClick={toggleMenu}>
+                <div className={`hamburger-icon ${showMenu ? "show" : ""}`} onClick={toggleMenu}>
                     {showMenu ? <BsX size={35} /> : <BsList size={35} />}
                 </div>
                 <div className="navbar-right-inner">                

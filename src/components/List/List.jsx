@@ -13,19 +13,19 @@ const List = () => {
         <div className="list-wrapper">
             {
                 reversedArray.map((item, index) => {
-                    if(item.answer === "") {
-                        return null;
-                    }
+                    // if(item.answer === "") {
+                    //     return null;
+                    // }
                     return (
                         <div className="list-item" key={index}>
                             <div className="list-icon-container">
                                 <div className="profile-icon">
                                     <img src={profileIcon} className="profile-icon-img" alt="profile-icon"/>
                                 </div>
-                                <h3>{item.answeredBy}</h3>
+                                <h3>{item.questionedBy}</h3>
                             </div>
                             <div className="list-question-div">{item.question}</div>
-                            <div className="list-answer-div">{item.answer}</div>
+                            <div className="list-answer-div">{item.answer ? item.answer : "Not answered"}</div>
                         </div>
                     )
                 })
