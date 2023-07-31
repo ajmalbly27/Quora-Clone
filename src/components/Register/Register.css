@@ -28,3 +28,10 @@
     color: red;
     text-align: center;
 }
+
+@media(max-width: 768px) {
+    .input-field-register, .register-button {
+        width: 45vw;
+    }
+    
+}

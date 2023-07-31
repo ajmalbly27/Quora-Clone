@@ -108,6 +108,7 @@ const AddAnswer = () => {
                 </div>
             </div>
 
+            <div className="add-answer-buttons-wrapper">
             <div className="add-answer-buttons">
                 <Button 
                     variant="danger" 
@@ -118,6 +119,7 @@ const AddAnswer = () => {
                     variant="danger"
                     onClick={handleAddAnswer}
                 >Add answer</Button>
+            </div>
             </div>
         </div>
     )

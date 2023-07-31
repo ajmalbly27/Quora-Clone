@@ -42,7 +42,8 @@
 }
 
 .add-answer-buttons {
-    float: right;
+    display: flex;
+    justify-content: flex-end;
     margin-right: 50px;
 }
 
@@ -57,4 +58,29 @@
 
 .list-of-questions:hover {
     text-decoration: underline;
+}
+
+@media(max-width: 700px) {
+    .add-answer-container {
+        margin: 25px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .select-question {
+       width: 80vw;
+       margin-right: 0px;
+    }
+    .answer {
+        width: 80vw;
+        margin-left: 0px;
+        margin-top: 25px;
+    }
+    .add-answer-buttons-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 80vw;
+    }
+    .add-answer-buttons {
+        padding-bottom: 25px;
+    }
 }
