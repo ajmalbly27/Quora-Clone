@@ -39,6 +39,15 @@ const Navbar = () => {
     }
 
     useEffect(() => {
+        // When the component mounts or 'showMenu' changes, toggle the 'no-scroll' class on the body
+        if (showMenu) {
+          document.body.classList.add("no-scroll");
+        } else {
+          document.body.classList.remove("no-scroll");
+        }
+    }, [showMenu]);
+    
+    useEffect(() => {
         // When the searchInput changes (i.e., the user types or clears the search bar),
         // update the questionAndAnswers state based on the searchInput value
         if (searchInput.length === 0 && JSON.parse(localStorage.getItem('questionAndAnswers'))) {
@@ -72,7 +81,7 @@ const Navbar = () => {
             <div className="hamburger-icon" onClick={toggleMenu}>
                 {showMenu ? <BsX size={35} /> : <BsList size={35} />}
             </div>
-
+            
             <div className={`navbar-right ${showMenu ? "show" : ""}`}>
                 <div className={`hamburger-icon ${showMenu ? "show" : ""}`} onClick={toggleMenu}>
                     {showMenu ? <BsX size={35} /> : <BsList size={35} />}

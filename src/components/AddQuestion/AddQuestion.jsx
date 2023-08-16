@@ -71,7 +71,12 @@ const AddQuestion = () => {
         <div className="add-question-container">
             <div className="add-question-logo-image-wrapper">
                 <div className="add-question-logo-image">
-                    <img src={quora_logo} className="quora-img" alt="logo-img"/>
+                    <img 
+                        src={quora_logo} 
+                        className="quora-img" 
+                        alt="logo-img"
+                        onClick={() => navigate('/')}
+                    />
                 </div>
             </div>
 

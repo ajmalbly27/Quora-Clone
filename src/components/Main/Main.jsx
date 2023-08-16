@@ -3,6 +3,7 @@ import Navbar from "../Navbar/Navbar";
 import './Main.css';
 import List from "../List/List";
 import QuestionsList from "../QuestionsList/QuestionsList";
+import Footer from "../Footer/Footer";
 
 const Main = () => {
 
@@ -13,6 +14,7 @@ const Main = () => {
                 <List />
                 <QuestionsList />
             </div>
+            <Footer />
         </div>
     )
 }
