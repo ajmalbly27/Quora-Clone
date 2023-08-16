@@ -13,9 +13,6 @@ const List = () => {
         <div className="list-wrapper">
             {
                 reversedArray.map((item, index) => {
-                    // if(item.answer === "") {
-                    //     return null;
-                    // }
                     return (
                         <div className="list-item" key={index}>
                             <div className="list-icon-container">
@@ -29,6 +26,9 @@ const List = () => {
                         </div>
                     )
                 })
+            }
+            {
+                reversedArray.length === 0 && <div style={{textAlign:'center', fontWeight:500}}>No records found</div>
             }
         </div>
     )

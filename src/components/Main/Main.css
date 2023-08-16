@@ -1,8 +1,9 @@
 
 .main-inner-wrapper {
+    min-height: 100vh;
+    margin-top: 25px;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 25px;
     background-color: rgb(226, 224, 224);
 }
 
