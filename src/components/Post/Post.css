@@ -1,0 +1,129 @@
+.list-item {
+    padding: 10px 25px;
+    background-color: white;
+    border: 1px solid rgb(231, 225, 225);
+    margin-bottom: 10px;
+}
+
+.list-icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.feed_avatar {
+    font-size: 42px;
+    margin-right: 10px;
+    color: rgb(153, 152, 152);
+}
+
+.list_question_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list_answer_text_wrapper {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid rgb(206, 193, 193);
+}
+
+.list_answer_text_wrapper:hover {
+    background-color: rgb(241, 239, 239);
+    cursor: pointer;
+}
+
+.list-icon-container div {
+    font-size: 16px;
+    font-weight: 650;
+    color: rgb(37, 37, 37);
+}
+
+.list-question-div {
+    font-size: 16px;
+    font-weight: 650;
+    margin-bottom: 10px;
+}
+
+.question_related_img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.question_related_img img {
+    width: 100%;
+    height: auto;
+}
+
+.answers_div_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-answer-div {
+    font-size: 16px;
+    width: 70%;
+    margin-bottom: 5px;
+}
+
+.answered_by {
+    display: flex;
+    justify-content: flex-end;
+    width: 25%;
+    font-size: 12px;
+    color: rgb(201, 68, 68);
+}
+
+.upvote_comment_links_main_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.upvote_comment_links_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.upvote_downvote_wrapper {
+    border-radius: 15px;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+}
+
+.upvote_wrapper {
+    padding: 4px 10px;
+    color: rgb(105, 105, 105);
+    display: flex;
+    align-items: center;
+}
+
+.upvote_wrapper:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.downvote_wrapper {
+    padding: 4px 10px;
+    border-left: 1px solid grey;
+    color: rgb(100, 99, 99);
+    display: flex;
+}
+
+.downvote_wrapper:hover {
+    cursor: pointer;
+}
+
+@media(max-width: 468px) {
+    .list-question-div {
+        font-size: 20px;
+        font-weight: 660;
+    }    
+    .list-answer-div {
+        font-size: 18px;
+    }
+}

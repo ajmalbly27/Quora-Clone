@@ -1,15 +1,14 @@
-
-.main-inner-wrapper {
-    min-height: 100vh;
-    margin-top: 25px;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: rgb(226, 224, 224);
+.main{
+    overflow: none;
 }
 
-@media(max-width: 468px) {
-    .main-inner-wrapper {
-        flex-direction: column;
-        align-items: center;
-    }  
+.main_wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.feed_wrapper {
+    margin: 0 20px;
+    margin-top: 20px;
 }

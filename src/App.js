@@ -1,21 +1,17 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Main from './components/Main/Main';
-import AddQuestion from './components/AddQuestion/AddQuestion';
-import AddAnswer from './components/AddAnswer/AddAnswer';
 import Login from './components/Login/Login';
-import Register from './components/Register/Register';
+import Main from './components/Main/Main';
+import { useContext } from 'react';
+import { UserContext } from './context/UserContext';
 
 function App() {
-
+  const { username } = useContext(UserContext);
   return (
-    <div className="App">
+    <div className='App'>
       <Routes>
-        <Route path='/' element={<Main />}/>
-        <Route path='/add-question' element={<AddQuestion />}/>
-        <Route path='/add-answer' element={<AddAnswer />}/>
-        <Route path='/login' element={<Login />}/>
-        <Route path='/register' element={<Register />}/>
+        <Route path='/' element={username?<Main />:<Login />}/>
+        {/* <Route path='/main' element={<Main />}/> */}
       </Routes>
     </div>
   );

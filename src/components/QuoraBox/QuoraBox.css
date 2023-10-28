@@ -1,0 +1,51 @@
+.queryBox {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 25px;
+    border: 1px solid rgb(231, 225, 225);
+    background-color: white;
+    cursor: pointer;
+    /* border-radius: 5px; */
+    margin-bottom: 10px;
+}
+
+.queryBox:hover {
+    border: 1x solid gray;
+}
+
+.queryBox_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.queryBox_info_avatar {
+    font-size: 47px;
+    color: rgb(153, 152, 152);
+}
+
+.queryBox_info p {
+    width: 100%;
+    padding: 7px 10px;  
+    border-radius: 15px;
+    border: 1px solid rgb(206, 205, 205);
+    background-color: rgb(248, 247, 247);
+    color: rgb(146, 145, 145);
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.queryBox_info p:hover {
+    background-color: rgb(240, 234, 234); 
+}
+
+.queryBox_quora {
+    display: flex;
+    margin-top: 8px;
+}
+
+.queryBox_quora p {
+    color: gray;
+    font-weight: bold;
+    font-size: large;
+}

@@ -1,21 +1,24 @@
-import React from "react";
-import Navbar from "../Navbar/Navbar";
+import Feed from '../Feed/Feed';
+import Navbar from '../Navbar/Navbar';
+import Sidebar from '../Sidebar/Sidebar';
+import QueraBox from '../QuoraBox/QuoraBox';
+import Widget from '../Widget/Widget';
 import './Main.css';
-import List from "../List/List";
-import QuestionsList from "../QuestionsList/QuestionsList";
-import Footer from "../Footer/Footer";
 
 const Main = () => {
-
-    return(
-        <div className="main-container">
+    return (
+        <div className="Main">
             <Navbar />
-            <div className="main-inner-wrapper">
-                <List />
-                <QuestionsList />
+            <div className='main_wrapper'>
+                <Sidebar />
+                <div className='feed_wrapper'>
+                    <QueraBox />
+                    <Feed />
+                </div>
+                <Widget />
             </div>
-            <Footer />
         </div>
-    )
+    );
 }
+
 export default Main;
